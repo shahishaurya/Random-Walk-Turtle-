@@ -1,0 +1,11 @@
+import turtle as t
+import random
+a = t.Turtle()
+colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+directions = [0, 90, 180, 270]
+a.pensize(15)
+a.speed("fastest")
+for _ in range(200):
+    a.color(random.choice(colours))
+    a.forward(30)
+    a.setheading(random.choice(directions))
